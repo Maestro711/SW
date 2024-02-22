@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Tennis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <p>.</p>
+   <P>
+    <div id="game-container">
+        <div id="leftPaddle" class="paddle paddle-left"></div>
+		<div id="rightPaddle" class="paddle paddle-right"></div>
+
+        <div id="ball"><img id="ball" src="ballspin.gif"></div>
+        <div id="title">Galaxy Tennis</div>
+
+        <div id="scoreboard">
+            <span id="leftScore">15pts</span> &nbsp&nbsp  -  &nbsp&nbsp  <span id="rightScore">Wins</span>
+        </div>
+        <div id="countdown"></div>
+        <div id="title"></div>
+        <!-- Win/Lose Message -->
+<div id="winLoseScreen" style="display:none;">
+    <h1 id="winLoseMessage"></h1>
+</div>
+
+        <button id="resetButton">START / RESET</button>
+        <div id="difficulty-buttons">
+            <button id="easyButton">Easy</button>
+            <button id="mediumButton">Medium</button>
+            <button id="hardButton">Hard</button>
+        </div>
+    </div>
+ 	<audio id="resetSound" src="clickroger.mp3"></audio>
+ 	<audio id="hitSound" src="saber-hit.mp3"></audio> 
+    <audio id="hitWallSound" src="bounce.mp3"></audio>
+    <audio id="startSound" src="countdown.mp3"></audio>
+    <audio id="scoreSound" src="Imperial.mp3"></audio>
+    <audio id="goalSound" src="goal.mp3"></audio>
+    <script src="script.js"></script>
+    </p>
+</body>
+</html>
